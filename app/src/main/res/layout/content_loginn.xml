@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/fondo">
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.elielpc.register.loginn"
+    tools:showIn="@layout/activity_loginn">
+
+tools:context="com.example.elielpc.register.registro"
+    tools:showIn="@layout/activity_registro"
+    android:scrollIndicators="right"
+    android:nestedScrollingEnabled="false">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/manzana"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/etUsuario"
+        android:hint="Nombre de Usuario"
+        android:textColorHint="#232323"
+        android:textColor="#000000" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:inputType="textPassword"
+        android:id="@+id/etContra"
+        android:hint="Contraseña"
+        android:textColorHint="#232323"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Iniciar Sesion"
+
+        android:clickable="false"
+        android:background="#47282828"
+        android:textColor="#232323" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/btnRegistrarse"
+        android:text="Registrarse"
+        android:textColor="#232323"
+        android:background="#47282828" />
+
+    </LinearLayout>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.example.elielpc.register.registro"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/regfondo"
+            >
+
+            <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/etNombreUsuario"
+        android:hint="Nombre de usuario"
+        android:textColorHint="#000000" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:inputType="textPassword"
+        android:id="@+id/etContraseña2"
+        android:hint="Contraseña"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:inputType="textPassword"
+        android:id="@+id/etRepContraseña"
+        android:hint="Repetir Contraseña"
+        android:textColorHint="#000000" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/etNombre"
+        android:hint="Nombre "
+        android:textColorHint="#000000" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/etEdad"
+        android:inputType="number"
+        android:maxLength="2"
+        android:contextClickable="false"
+        android:hint="Edad"
+        android:textColorHint="#000000" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/etEstatura"
+        android:maxLength="3"
+        android:inputType="numberDecimal"
+        android:hint="Estatura en Centimetros (Ejemplo 170 cm)"
+        android:textColorHint="#000000" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Sexo"
+
+        android:textColor="#000000" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sexo"
+        android:layout_marginTop="11dp"
+        android:entries="@array/sexo"
+        android:background="#47282828"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/etPeso"
+        android:maxLength="4"
+        android:inputType="numberDecimal"
+        android:hint="Peso en Kilogramos (Ejemplo 70 kg) "
+        android:textColorHint="#000000" />
+
+     <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:textStyle="bold"
+         android:text="Objetivo "
+         android:textColor="#000000" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/objetivo"
+        android:layout_marginTop="11dp"
+        android:entries="@array/objetivo"
+        android:background="#47282828"
+        android:spinnerMode="dialog">
+
+            </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/btnRegistrarse2"
+        android:text="Registrarse"
+        android:textColor="#000000"
+        android:background="#47282828"
+        />
+        </LinearLayout>
+    </ScrollView>
+
